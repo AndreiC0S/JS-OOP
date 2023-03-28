@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User{
+            parola = '12345';
+            constructor(id,nume,mail){
+                this.id = id;
+                this.nume = nume;
+                this.mail = mail;
+            }
+            salut(){
+                console.log(`salut!, numele meueste ${this.nume}`);
+            }
+            info(){
+                this.salut();
+                console.log(`adresa de mail este ${this.mail} si id-ul ${this.id}`)
+            }
+        }
+
+        const user1 = new User(1, 'Popescu Ion', 'popescu@ion.ro')
+
+        console.log( user1);
+        user1.nume = 'Ionescu Dan'
+        user1.info();
+    </script>
+</body>
+</html>

@@ -11,13 +11,18 @@
 <body>
     <script src="./js/carte.js"></script>
     <script>
-        const poezii = new Carte('Poezii', 'Eminescu', 'Editura', 1945, 45, 100);
-        console.log(poezii);
-        poezii.obtine_titlu();
-        poezii.obtine_autor();
-        poezii.modifica_pret(65);
-        poezii.afiseaza_info();
-        poezii.deschide_cartea(69);
+        const poezii = new Carte('Poezii', 'Eminescu', 'Editura', 1945, 100);
+        // console.log(poezii);
+        // poezii.obtine_titlu();
+        // poezii.obtine_autor();
+        // poezii.modifica_pret(65);
+        // poezii.afiseaza_info();
+        // poezii.deschide_cartea(69);
+        // poezii.pretNou()
+        console.log(poezii)
+        poezii.pret = 0;
+        console.log(poezii)
+        console.log(poezii.myPret)
     </script>
 </body>
 
