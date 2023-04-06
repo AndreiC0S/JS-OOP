@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            border: solid 10px black;
+            padding: 20px;
+            width: 300px;
+            background-color: antiquewhite;
+
+        }
+        p{
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //1. 
+        //{
+        //     var number = 10;
+        // }
+        // var display = function (){
+        //     
+        //     console.log(number);
+        // }
+        // display()
+
+//---------------------------------------------------------------------------------------------
+
+        //2.
+        // const person = {
+        //     name:'Dan',
+        //     age:20,
+        //     job:'soft dev',
+        //     country:'Nigeria',
+        //     car:'ford',
+        //     description:function(){
+        //         return `${this.name}- ${this.age}-${this.job}-${this.country} - ${this.car}`
+        //     }
+        // }
+        // console.log(person.description());
+
+//----------------------------------------------------------------------------------------------
+
+        //3.
+        // const person = {
+        //     name:'Dan',
+        //     age:20,
+        //     job:'soft dev',
+        //     country:'Nigeria',
+        //     car:'ford',
+        //     description:function(){
+        //         return `${this.name}- ${this.age}-${this.job}-${this.country} - ${this.car}`
+        //     }
+        // }
+        // console.log(person.description());
+        // delete person.car;
+        // console.log(person.description());
+        // delete person;
+        // console.log(person.description());
+        // console.log(person)
+
+//----------------------------------------------------------------------------------------------
+
+        //4.
+//         class Person{
+//             constructor(name,varsta){
+//                 this.name =name;
+//                 this.varsta = varsta;
+//             }
+//             describe(){
+//                 return `numele meu este ${this.name} si am ${this.varsta} de ani`
+//             }
+//         }
+//         var dan = new Person('dan',22);
+//         var ion = new Person('ion',22);
+// 
+//         console.log(dan.describe());
+//         console.log(ion.describe());
+
+//----------------------------------------------------------------------------------------------
+
+//5.
+//     class Vehicole{
+//         constructor(tip,culoare,marca,an){
+//             this.tip = tip;
+//             this.culoare = culoare;
+//             this.marca = marca;
+//             this.an = an;
+//         }
+//         get Tip(){
+//             return this.tip;
+//         }
+//         set Tip(value){
+//             this._tip = value;
+//         }
+//         info(){
+//             return `${this.tip} ${this.culoare} ${this.marca} ${this.an} <br><br>`
+//         }
+//         start(){
+//             return `${this.tip} ${this.marca} a pornit<br><br>`
+//         }
+//         stop(){
+//             return `${this.tip} ${this.marca} a oprit<br><br>`
+//         }
+//         pasager(){
+//             return `${this.tip} a luat un pasager <br><br>`
+//         }
+//         lasaPasager(){
+//             return `${this.tip} a lasat un pasager<br><br>`
+//         }
+//     }
+//     const masina = new Vehicole('masina','rosu','Ford',2016);
+//     const motor = new Vehicole('motor','rosu','Honda',2016);
+// 
+//     document.write(masina.info())
+//     document.write(masina.info());
+//     document.write(motor.info());
+//     document.write(masina.start());
+//     document.write(motor.start());
+//     document.write(masina.stop());
+//     document.write(motor.stop());
+//     document.write(masina.pasager());
+//     document.write(motor.pasager());
+//     document.write(masina.lasaPasager());
+//     document.write(motor.lasaPasager());
+
+//-----------------------------------------------------------------
+
+// class Vehicole{
+//         constructor(tip,culoare,marca,an){
+//             this._tip = tip;
+//             this._culoare = culoare;
+//             this._marca = marca;
+//             this._an = an;
+//         }
+//         get Tip(){
+//             console.log('getter')
+//             return this._tip;
+//         }
+//         set Tip(value){
+//             console.log('setter')
+//             this._tip = value;
+//         }
+//         get Culoare(){
+//             console.log('getter')
+//             return this._culoare;
+//         }
+//         set Culoare(value){
+//             console.log('setter')
+//             this._culaore = value;
+//         }
+//         get Marca(){
+//             console.log('getter')
+//             return this._marca;
+//         }
+//         set Marca(value){
+//             console.log('setter')
+//             this._marca = value;
+//         }
+//         info(){
+//             return `${this.tip} ${this.culoare} ${this.marca} ${this.an} <br><br>`
+//         }
+//         start(){
+//             return `${this.tip} ${this.marca} a pornit<br><br>`
+//         }
+//         stop(){
+//             return `${this.tip} ${this.marca} a oprit<br><br>`
+//         }
+//         pasager(){
+//             return `${this.tip} a luat un pasager <br><br>`
+//         }
+//         lasaPasager(){
+//             return `${this.tip} a lasat un pasager<br><br>`
+//         }
+//     }
+//     const masina = new Vehicole('masina','rosu','Ford',2016);
+//     const motor = new Vehicole('motor','rosu','Honda',2016);
+//     
+//     console.log(masina.Tip)
+//     masina.Tip = 'moto'
+
+
+
+    </script>
+</body>
+</html>
