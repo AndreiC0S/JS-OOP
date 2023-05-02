@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+        // EX 1
+        //      let a = 10;
+        //   let b = 20;
+        //         let c
+        //
+        //          c = a;
+        //          a = b;
+        //          b = c;
+        //          console.log('a =',a, 'b =',b);
+
+        // [a,b] = [b,a]
+        // console.log('a =',a, 'b =',b);
+
+        //EX 2
+
+//         let a = 'capac'
+//         let b = 'mere'
+// 
+//         function palindrop(str) {
+//             let revstring = "";
+//             for (let i = 0; i < str.length; i++) {
+//                 revstring = str.charAt(i) + revstring
+//             }
+//             if (str == revstring) {
+//                 return true
+//             } else {
+//                 return false
+//             }
+//         }
+//         console.log(palindrop(a))
+//         console.log(palindrop(b))
+// 
+//         function palindrop2(str) {
+//             let revstring = str.split('').reverse().join("")
+//             if (str === revstring) {
+//                 return true
+//             } else {
+//                 return false
+//             }
+//         }
+//         console.log(palindrop2(a))
+//         console.log(palindrop2(b))
+
+        // EX 3 
+
+//         let a = "Js este un limbaj de programare usor de invatat"
+//         let nr = 6
+// 
+//         function test(a,b){
+//             return a.split(' ').slice(0, b).join(' ');
+//         }
+//         
+//         console.log(test(a,nr))
+
+        //EX 4
+//         const DAY_IN_MILLISECONDS = 1000 * 60 * 60 * 24;
+// 
+//         function date(a, b){
+//             const date1 = new Date(a);
+//             const date2 = new Date(b);
+//             const diffTime = Math.abs(date1 - date2);
+//             const diffDays = Math.ceil(diffTime / DAY_IN_MILLISECONDS);
+//             return diffDays
+//         }
+// 
+//         console.log(date('12/13/2023','12/30/2023'))
+// 
+//         function getBday(dateString){
+//             var today = new Date();
+//             var birthDay = new Date(dateString);
+//             var age = today.getFullYear() - birthDay.getFullYear();
+//             var m = today.getMonth() - birthDay.getMonth();
+//             if(m<0 || (m === 0 && today.getDate() < birthDay.getDate())){
+//                 age--;
+//             }
+//             return age;
+//         }
+
+        //EX 5
+
+        const a = [6, 8, 5, 1,10,4,2,3,5,9,6,2,7,1]
+
+        function sort(a){
+            let index = 0;
+            a = a.sort((a,b) => a -b);
+            for (let i = 1; i < a.length; i++){
+                if(a[index] !== a[i]){
+                    index++
+                    a[index] = a[i]
+                }
+            }
+            a.length = index + 1;
+            return a
+        }
+
+        console.log(sort(a))
+
+
+    </script>
+</body>
+
+</html>
